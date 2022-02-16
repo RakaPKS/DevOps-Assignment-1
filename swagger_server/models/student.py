@@ -17,8 +17,8 @@ class Student(Model):
     def __init__(self, student_id: int=None, first_name: str=None, last_name: str=None, grade_records: List[object]=None):  # noqa: E501
         """Student - a model defined in Swagger
 
-        :param id: The id of this Student.  # noqa: E501
-        :type id: int
+        :param student_id: The student_id of this Student.  # noqa: E501
+        :type student_id: int
         :param first_name: The first_name of this Student.  # noqa: E501
         :type first_name: str
         :param last_name: The last_name of this Student.  # noqa: E501
@@ -34,12 +34,12 @@ class Student(Model):
         }
 
         self.attribute_map = {
-            'student_id': 'id',
+            'student_id': 'student_id',
             'first_name': 'first_name',
             'last_name': 'last_name',
             'grade_records': 'gradeRecords'
         }
-        self._id = id
+        self._student_id = student_id
         self._first_name = first_name
         self._last_name = last_name
         self._grade_records = grade_records
@@ -57,24 +57,24 @@ class Student(Model):
 
     @property
     def student_id(self) -> int:
-        """Gets the id of this Student.
+        """Gets the student_id of this Student.
 
 
-        :return: The id of this Student.
+        :return: The student_id of this Student.
         :rtype: int
         """
         return self._student_id
 
-    @id.setter
-    def student_id(self, id: int):
-        """Sets the id of this Student.
+    @student_id.setter
+    def student_id(self, student_id: int):
+        """Sets the student_id of this Student.
 
 
-        :param id: The id of this Student.
-        :type id: int
+        :param student_id: The student_id of this Student.
+        :type student_id: int
         """
 
-        self._id = student_id
+        self._student_id = student_id
 
     @property
     def first_name(self) -> str:

@@ -102,7 +102,7 @@ components:
       - last_name
       type: object
       properties:
-        id:
+        student_id:
           type: integer
         first_name:
           type: string
@@ -114,8 +114,8 @@ components:
             type: object
             format: GradeRecord
       example:
+        student_id: 0
         last_name: last_name
-        id: 0
         first_name: first_name
         gradeRecords:
         - {}
