@@ -14,7 +14,7 @@ class Student(Model):
 
     Do not edit the class manually.
     """
-    def __init__(self, id: int=None, first_name: str=None, last_name: str=None, grade_records: List[object]=None):  # noqa: E501
+    def __init__(self, student_id: int=None, first_name: str=None, last_name: str=None, grade_records: List[object]=None):  # noqa: E501
         """Student - a model defined in Swagger
 
         :param id: The id of this Student.  # noqa: E501
@@ -27,14 +27,14 @@ class Student(Model):
         :type grade_records: List[object]
         """
         self.swagger_types = {
-            'id': int,
+            'student_id': int,
             'first_name': str,
             'last_name': str,
             'grade_records': List[object]
         }
 
         self.attribute_map = {
-            'id': 'id',
+            'student_id': 'id',
             'first_name': 'first_name',
             'last_name': 'last_name',
             'grade_records': 'gradeRecords'
@@ -56,17 +56,17 @@ class Student(Model):
         return util.deserialize_model(dikt, cls)
 
     @property
-    def id(self) -> int:
+    def student_id(self) -> int:
         """Gets the id of this Student.
 
 
         :return: The id of this Student.
         :rtype: int
         """
-        return self._id
+        return self._student_id
 
     @id.setter
-    def id(self, id: int):
+    def student_id(self, id: int):
         """Sets the id of this Student.
 
 
@@ -74,7 +74,7 @@ class Student(Model):
         :type id: int
         """
 
-        self._id = id
+        self._id = student_id
 
     @property
     def first_name(self) -> str:
